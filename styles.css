@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    height: auto;
+    font-family: 'Raleway';
+    background: linear-gradient(to bottom, black, #1a1b3d);
+}
+@media(max-width: 768px){
+    body {
+        font-size: 14px;
+    }
+}
+/*navbar*/
+
+.navbar{
+    height: 10vh;
+    width: 99.8%;
+    position: fixed;
+    margin: 0 auto;
+}
+  
+.nav-list{
+    border: solid #15187A;
+    border-radius: 0 0 30px 30px;
+    background-color: #15187A;
+    height: 96%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px #42BCF0;
+}
+  
+li{
+    list-style: none;
+    width: 33%;
+    height: 50%;
+    margin: auto 10px;
+    text-align: center;
+    font-size: x-large;
+}
+.navlink{
+    color: #42BCF0;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    text-shadow: 0.5px 0.5px white;
+}
+
+/*end navbar*/
+
+.separacion{
+    height: 15vh;
+}
+  
+/*bienvenida*/
+
+.seccion-bienvenida{
+    background-color: #15187A;
+    height: 100vh;
+    border-radius: 100px;
+    margin:0 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #42BCF0;
+}
+
+
+h1{
+    width: 50vw;
+    height: 13vh;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #42BCF0;
+    text-shadow: 2px 2px 5px black;
+}
+
+.seccion-bienvenida > p:nth-of-type(1) {
+    width: 45vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: oblique;
+    color: #42BCF0;
+}
+
+.seccion-bienvenida > p:nth-of-type(2) {
+    height: 8vh;
+    width: 40vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 2rem;
+    font-style: oblique;
+    color: #42BCF0;
+} 
+/*end bienvenida*/
+  
+/*proyectos*/
+
+.seccion-proyectos{
+    /* border: solid yellow 1px; */
+    background-color: #15187A;
+    height: 120vh;
+    margin: 2em 5em;
+    border-radius: 100px;
+    box-shadow: 0 0 15px #42BCF0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+h2{
+    /* border: solid red 1px; */
+    width: 50%;
+    height: 5%;
+    margin: 2em auto;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #42BCF0;
+    text-align: center;
+}
+
+.proyecto-grid{
+   /* border: solid red 1px; */
+    margin: 10px auto;
+    margin: 2em auto;
+    height: 80%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3em;
+}
+  
+.proyecto{
+    height: 40vh;
+    width: 20vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    transition: transform 500ms ease 200ms;
+    text-decoration: none;
+}
+.proyecto:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px #1a1b3d;
+}
+.proyecto > img {
+    margin: -2px auto;
+    height: 75%;
+    width: 100%;
+}
+.proyecto > p {
+    border: solid #42BCF0;
+    background-color: #42BCF0;
+    color: #1a1b3d;
+    margin: -2px auto;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 60px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 5px #1a1b3d;
+}
+
+/*end proyectos*/
+
+/*contacto*/
+
+.seccion-contacto{
+    background-color: #15187A;
+    border-radius: 100px;
+    height: 55vh;
+    margin: 2em 5em;
+    box-shadow: 0 0 15px #42BCF0;
+}
+
+.contacto-title{
+    margin: 5vh auto;
+    height: 40%;
+}
+
+.contacto-rrss{
+    margin: 5vh auto;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h3{
+    height: 8vh;
+    width: 50%;
+    margin: 15px auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: #42BCF0;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.p-contacto{
+    background-color: none;
+    height: 5vh;
+    width: 70%;
+    margin: 30px auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: #42BCF0;
+    font-style: oblique;
+}
+
+.rrss{
+    margin: 20px 0 20px 50px;
+    height: 10vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.rrss:hover {
+    transform: translateY(-5px) scale(1.2);
+    text-shadow: 3px 3px 10px #1a1b3d;
+    font-weight: bold;
+}
+.rrss > p {
+    width: 70%;
+    height: 50%;
+    font-size: 1.5em;
+    text-align: left;
+    color: #42BCF0;
+    margin: auto;
+}
+.rrss > img {
+    height: 100%;
+    width: 5vw;
+}
+
+/*end contacto*/
+
+  
+/*footer*/
+footer{
+    width: 100%;
+    height: 5em;
+    margin: 0 auto;
+    background-color: #15187A;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 0 15px #42BCF0;
+}
+
+footer > p{
+    height: auto;
+    width: 35%;
+    font-size: 20px;
+    color: white;
+    font-style: oblique;
+}
+footer > p > a{
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    text-shadow: 1px 1px 2px#42BCF0;
+    font-weight: bold;
+}
+footer > p > a:visited{
+    color: white;
+}
+
+footer > p:nth-of-type(1){
+    text-align: right;
+}
+/*end footer*/
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
